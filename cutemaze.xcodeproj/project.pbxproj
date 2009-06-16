@@ -1,0 +1,1115 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		052CE29908621CDFD3CB9EF8 /* qrc_theme.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 703126FDE1B4602701F1C445 /* qrc_theme.cpp */; settings = {ATTRIBUTES = (); }; };
+		069D05B0128AE5DC7EE31738 /* QtCore.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 7BC2E65A5E699A5E5D834CA2 /* QtCore.framework */; };
+		08D8EC4D0C273BC5E194E43D /* QtSvg.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 2D7FF9EBB69BCF2C19DC629B /* QtSvg.framework */; };
+		1328D9B90FE65E8A00D227FF /* cutemaze.app in Project Copy */ = {isa = PBXBuildFile; fileRef = 1328D9B60FE65E8A00D227FF /* cutemaze.app */; };
+		1328DA870FE6733300D227FF /* HAdapt.c in Sources */ = {isa = PBXBuildFile; fileRef = 1328D9DD0FE6680500D227FF /* HAdapt.c */; };
+		1328DA880FE6733300D227FF /* HAdapt.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328D9DE0FE6680500D227FF /* HAdapt.h */; };
+		1328DA8A0FE6733300D227FF /* HAudio.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328DA080FE6680500D227FF /* HAudio.h */; };
+		1328DA8C0FE6733300D227FF /* HDict.c in Sources */ = {isa = PBXBuildFile; fileRef = 1328DA070FE6680500D227FF /* HDict.c */; };
+		1328DA8D0FE6733300D227FF /* HDict.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328D9E00FE6680500D227FF /* HDict.h */; };
+		1328DA8E0FE6733300D227FF /* HFB.c in Sources */ = {isa = PBXBuildFile; fileRef = 1328D9E10FE6680500D227FF /* HFB.c */; };
+		1328DA8F0FE6733300D227FF /* HFB.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328D9E20FE6680500D227FF /* HFB.h */; };
+		1328DA900FE6733300D227FF /* HGraf.c in Sources */ = {isa = PBXBuildFile; fileRef = 1328D9E30FE6680500D227FF /* HGraf.c */; };
+		1328DA910FE6733300D227FF /* HGraf.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328D9E40FE6680500D227FF /* HGraf.h */; };
+		1328DA920FE6733300D227FF /* HLabel.c in Sources */ = {isa = PBXBuildFile; fileRef = 1328D9E50FE6680500D227FF /* HLabel.c */; };
+		1328DA930FE6733300D227FF /* HLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328D9E60FE6680500D227FF /* HLabel.h */; };
+		1328DA940FE6733300D227FF /* HLat.c in Sources */ = {isa = PBXBuildFile; fileRef = 1328D9E70FE6680500D227FF /* HLat.c */; };
+		1328DA950FE6733300D227FF /* HLat.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328D9E80FE6680500D227FF /* HLat.h */; };
+		1328DA960FE6733300D227FF /* HLM.c in Sources */ = {isa = PBXBuildFile; fileRef = 1328D9E90FE6680500D227FF /* HLM.c */; };
+		1328DA970FE6733300D227FF /* HLM.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328D9EA0FE6680500D227FF /* HLM.h */; };
+		1328DA980FE6733300D227FF /* HMath.c in Sources */ = {isa = PBXBuildFile; fileRef = 1328D9EB0FE6680500D227FF /* HMath.c */; };
+		1328DA990FE6733300D227FF /* HMath.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328D9EC0FE6680500D227FF /* HMath.h */; };
+		1328DA9A0FE6733300D227FF /* HMem.c in Sources */ = {isa = PBXBuildFile; fileRef = 1328D9ED0FE6680500D227FF /* HMem.c */; };
+		1328DA9B0FE6733300D227FF /* HMem.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328D9EE0FE6680500D227FF /* HMem.h */; };
+		1328DA9C0FE6733300D227FF /* HModel.c in Sources */ = {isa = PBXBuildFile; fileRef = 1328D9EF0FE6680500D227FF /* HModel.c */; };
+		1328DA9D0FE6733300D227FF /* HModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328D9F00FE6680500D227FF /* HModel.h */; };
+		1328DA9E0FE6733300D227FF /* HNBest.c in Sources */ = {isa = PBXBuildFile; fileRef = 1328D9F10FE6680500D227FF /* HNBest.c */; };
+		1328DA9F0FE6733300D227FF /* HNBest.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328D9F20FE6680500D227FF /* HNBest.h */; };
+		1328DAA00FE6733300D227FF /* HNet.c in Sources */ = {isa = PBXBuildFile; fileRef = 1328D9F30FE6680500D227FF /* HNet.c */; };
+		1328DAA10FE6733300D227FF /* HNet.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328D9F40FE6680500D227FF /* HNet.h */; };
+		1328DAA20FE6733300D227FF /* HParm.c in Sources */ = {isa = PBXBuildFile; fileRef = 1328D9F50FE6680500D227FF /* HParm.c */; };
+		1328DAA30FE6733300D227FF /* HParm.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328D9F60FE6680500D227FF /* HParm.h */; };
+		1328DAA40FE6733300D227FF /* HRec.c in Sources */ = {isa = PBXBuildFile; fileRef = 1328D9F70FE6680500D227FF /* HRec.c */; };
+		1328DAA50FE6733300D227FF /* HRec.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328D9F80FE6680500D227FF /* HRec.h */; };
+		1328DAA60FE6733300D227FF /* HShell.c in Sources */ = {isa = PBXBuildFile; fileRef = 1328D9F90FE6680500D227FF /* HShell.c */; };
+		1328DAA70FE6733300D227FF /* HShell.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328D9FA0FE6680500D227FF /* HShell.h */; };
+		1328DAA80FE6733300D227FF /* HSigP.c in Sources */ = {isa = PBXBuildFile; fileRef = 1328D9FB0FE6680500D227FF /* HSigP.c */; };
+		1328DAA90FE6733300D227FF /* HSigP.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328D9FC0FE6680500D227FF /* HSigP.h */; };
+		1328DAAA0FE6733300D227FF /* HThreads.c in Sources */ = {isa = PBXBuildFile; fileRef = 1328D9FD0FE6680500D227FF /* HThreads.c */; };
+		1328DAAB0FE6733300D227FF /* HThreads.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328D9FE0FE6680500D227FF /* HThreads.h */; };
+		1328DAAC0FE6733300D227FF /* HTrain.c in Sources */ = {isa = PBXBuildFile; fileRef = 1328D9FF0FE6680500D227FF /* HTrain.c */; };
+		1328DAAD0FE6733300D227FF /* HTrain.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328DA000FE6680500D227FF /* HTrain.h */; };
+		1328DAAE0FE6733300D227FF /* HUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = 1328DA010FE6680500D227FF /* HUtil.c */; };
+		1328DAAF0FE6733300D227FF /* HUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328DA020FE6680500D227FF /* HUtil.h */; };
+		1328DAB00FE6733300D227FF /* HVQ.c in Sources */ = {isa = PBXBuildFile; fileRef = 1328DA030FE6680500D227FF /* HVQ.c */; };
+		1328DAB10FE6733300D227FF /* HVQ.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328DA040FE6680500D227FF /* HVQ.h */; };
+		1328DAB20FE6733300D227FF /* HWave.c in Sources */ = {isa = PBXBuildFile; fileRef = 1328DA050FE6680500D227FF /* HWave.c */; };
+		1328DAB30FE6733300D227FF /* HWave.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328DA060FE6680500D227FF /* HWave.h */; };
+		1328DAB90FE673D600D227FF /* ABuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1328DA1F0FE6682C00D227FF /* ABuffer.cpp */; };
+		1328DABA0FE673D600D227FF /* ABuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328DA200FE6682C00D227FF /* ABuffer.h */; };
+		1328DABB0FE673D600D227FF /* ACode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1328DA210FE6682C00D227FF /* ACode.cpp */; };
+		1328DABC0FE673D600D227FF /* ACode.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328DA220FE6682C00D227FF /* ACode.h */; };
+		1328DABD0FE673D600D227FF /* AComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1328DA230FE6682C00D227FF /* AComponent.cpp */; };
+		1328DABE0FE673D600D227FF /* AComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328DA240FE6682C00D227FF /* AComponent.h */; };
+		1328DABF0FE673D600D227FF /* ADict.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1328DA250FE6682C00D227FF /* ADict.cpp */; };
+		1328DAC00FE673D600D227FF /* ADict.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328DA260FE6682C00D227FF /* ADict.h */; };
+		1328DAC10FE673D600D227FF /* AGram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1328DA270FE6682C00D227FF /* AGram.cpp */; };
+		1328DAC20FE673D600D227FF /* AGram.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328DA280FE6682C00D227FF /* AGram.h */; };
+		1328DAC30FE673D600D227FF /* AHmms.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1328DA290FE6682C00D227FF /* AHmms.cpp */; };
+		1328DAC40FE673D600D227FF /* AHmms.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328DA2A0FE6682C00D227FF /* AHmms.h */; };
+		1328DAC50FE673D600D227FF /* AHTK.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1328DA2B0FE6682C00D227FF /* AHTK.cpp */; };
+		1328DAC60FE673D600D227FF /* AHTK.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328DA2C0FE6682C00D227FF /* AHTK.h */; };
+		1328DAC70FE673D600D227FF /* AIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1328DA2D0FE6682C00D227FF /* AIO.cpp */; };
+		1328DAC80FE673D600D227FF /* AIO.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328DA2E0FE6682C00D227FF /* AIO.h */; };
+		1328DAC90FE673D600D227FF /* ALog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1328DA2F0FE6682C00D227FF /* ALog.cpp */; };
+		1328DACA0FE673D600D227FF /* ALog.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328DA300FE6682C00D227FF /* ALog.h */; };
+		1328DACB0FE673D600D227FF /* AMonitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1328DA310FE6682C00D227FF /* AMonitor.cpp */; };
+		1328DACC0FE673D600D227FF /* AMonitor.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328DA320FE6682C00D227FF /* AMonitor.h */; };
+		1328DACD0FE673D600D227FF /* ANGram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1328DA330FE6682C00D227FF /* ANGram.cpp */; };
+		1328DACE0FE673D600D227FF /* ANGram.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328DA340FE6682C00D227FF /* ANGram.h */; };
+		1328DACF0FE673D600D227FF /* APacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1328DA350FE6682C00D227FF /* APacket.cpp */; };
+		1328DAD00FE673D600D227FF /* APacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328DA360FE6682C00D227FF /* APacket.h */; };
+		1328DAD10FE673D600D227FF /* ARec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1328DA370FE6682C00D227FF /* ARec.cpp */; };
+		1328DAD20FE673D600D227FF /* ARec.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328DA380FE6682C00D227FF /* ARec.h */; };
+		1328DAD30FE673D600D227FF /* AResource.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1328DA390FE6682C00D227FF /* AResource.cpp */; };
+		1328DAD40FE673D600D227FF /* AResource.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328DA3A0FE6682C00D227FF /* AResource.h */; };
+		1328DAD50FE673D600D227FF /* ARMan.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1328DA3B0FE6682C00D227FF /* ARMan.cpp */; };
+		1328DAD60FE673D600D227FF /* ARMan.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328DA3C0FE6682C00D227FF /* ARMan.h */; };
+		1328DAD80FE673D600D227FF /* ASource.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328DA3E0FE6682C00D227FF /* ASource.h */; };
+		1328DAD90FE673D600D227FF /* ASplash.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1328DA3F0FE6682C00D227FF /* ASplash.cpp */; };
+		1328DADA0FE673D600D227FF /* ASplash.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328DA400FE6682C00D227FF /* ASplash.h */; };
+		1328DADB0FE673D600D227FF /* ASyn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1328DA410FE6682C00D227FF /* ASyn.cpp */; };
+		1328DADC0FE673D600D227FF /* ASyn.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328DA420FE6682C00D227FF /* ASyn.h */; };
+		1328DADD0FE673D600D227FF /* ATee.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1328DA430FE6682C00D227FF /* ATee.cpp */; };
+		1328DADE0FE673D600D227FF /* ATee.h in Headers */ = {isa = PBXBuildFile; fileRef = 1328DA440FE6682C00D227FF /* ATee.h */; };
+		1328DAF50FE68C2D00D227FF /* libHTK.a in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 1328DA770FE672C000D227FF /* libHTK.a */; };
+		1328DAF60FE68C3000D227FF /* libATK.a in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 1328DA7F0FE672EF00D227FF /* libATK.a */; };
+		1328DAFA0FE68FFF00D227FF /* libX11.dylib in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 1328DAF90FE68FFF00D227FF /* libX11.dylib */; };
+		1328DAFC0FE6903F00D227FF /* AudioToolbox.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 1328DAFB0FE6903F00D227FF /* AudioToolbox.framework */; };
+		1328DB0E0FE6919300D227FF /* HAudioDummy.c in Sources */ = {isa = PBXBuildFile; fileRef = 1328DA590FE6687300D227FF /* HAudioDummy.c */; };
+		1328DB0F0FE691B400D227FF /* ASourceNew.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1328DA5B0FE6687C00D227FF /* ASourceNew.cpp */; };
+		1CBED7D902C0552266FC2FC6 /* scores.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 842E16A6C64110D768FAFA28 /* scores.cpp */; settings = {ATTRIBUTES = (); }; };
+		2B093CA6F071B023A473CED0 /* main.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 118FCBAABA162BA17933C789 /* main.cpp */; settings = {ATTRIBUTES = (); }; };
+		34A5FBF9669DAD0A0CEF237D /* board.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = F6D3987D5001B3FDEBB68F83 /* board.cpp */; settings = {ATTRIBUTES = (); }; };
+		3571256233BF461F113B4539 /* moc_board.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 55F764E0B1002082AE21DC89 /* moc_board.cpp */; settings = {ATTRIBUTES = (); }; };
+		4D6E5B26D822A0C11451FE7C /* ATKCode.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 05AE800837DCC5E1EFB0B245 /* ATKCode.cpp */; settings = {ATTRIBUTES = (); }; };
+		501667F26B3C1FF6767A7C12 /* QtGui.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 9B36DA7E32F0304E780E7972 /* QtGui.framework */; };
+		51D4DBF7CB8537BE86EBD055 /* AppKit.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 821416211D63F190AAAD016A /* AppKit.framework */; };
+		5347A365CDB0ADAAFDBFEA4B /* theme.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = E7E2BA32D73D039E9670DF43 /* theme.cpp */; settings = {ATTRIBUTES = (); }; };
+		7DD57785CD6F60FE4815D86F /* cutemaze.icns in Bundle Resources */ = {isa = PBXBuildFile; fileRef = 6F81AA53335E786E90F660E4 /* cutemaze.icns */; settings = {ATTRIBUTES = (); }; };
+		818CBC07BC501415B216EA8C /* maze.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = E39BA1AEBBEFBA3F6ADC5C73 /* maze.cpp */; settings = {ATTRIBUTES = (); }; };
+		9CB0A8ECEB71BB2030D34769 /* moc_settings.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 185FBC6310E35CB6C4F8D35F /* moc_settings.cpp */; settings = {ATTRIBUTES = (); }; };
+		C1854D0763473FEE47FE5C48 /* cell.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 03F4D77439DFFBC77BCA85EF /* cell.cpp */; settings = {ATTRIBUTES = (); }; };
+		C8FD4A1AAA37CF2CA2824CCF /* Carbon.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = DA138F75C9F545CDAE7FB264 /* Carbon.framework */; };
+		CB10675F446A735BEDD8A1A1 /* moc_scores.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 5A2E998889A5A6E4C2197BC2 /* moc_scores.cpp */; settings = {ATTRIBUTES = (); }; };
+		DC484E4B172ABCC3D8A496E7 /* qrc_preview.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = AC6C84ABB20375E1A7EA6304 /* qrc_preview.cpp */; settings = {ATTRIBUTES = (); }; };
+		DC4DEBE2585271D736AE5AD8 /* AQCode.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = EAAD36D050D10274A3FD1DC4 /* AQCode.cpp */; settings = {ATTRIBUTES = (); }; };
+		F03A739FDFB944A527D9A873 /* settings.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 5265225BB2EED4C4FAE212B4 /* settings.cpp */; settings = {ATTRIBUTES = (); }; };
+		F9E76E570E10AF14870553A7 /* ApplicationServices.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 27AE7A480FD6C52FCA80FECD /* ApplicationServices.framework */; };
+		FC203E8953C53F09233D0CFC /* window.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 22B8EB497DD4812281107EF2 /* window.cpp */; settings = {ATTRIBUTES = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F6069D5A5DA8AA28EDB8B3C6 /* Project Copy */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /Users/Terje/Documents/Skole/Sirkus/cutemaze/cutemaze;
+			dstSubfolderSpec = 0;
+			files = (
+				1328D9B90FE65E8A00D227FF /* cutemaze.app in Project Copy */,
+			);
+			name = "Project Copy";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		03A398382108752B5E31F8E8 /* scores.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scores.h; sourceTree = "<group>"; };
+		03F4D77439DFFBC77BCA85EF /* cell.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = cell.cpp; sourceTree = "<group>"; };
+		05AE800837DCC5E1EFB0B245 /* ATKCode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ATKCode.cpp; sourceTree = "<group>"; };
+		07C09E58C6A67D0C667536C9 /* board.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = board.h; sourceTree = "<group>"; };
+		0BD40B87F34B95B2442C88B3 /* preview.qrc */ = {isa = PBXFileReference; lastKnownFileType = text; name = preview.qrc; path = preview/preview.qrc; sourceTree = "<group>"; };
+		0D77DB9F2B1DA8A5A8D011D0 /* maze.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = maze.h; sourceTree = "<group>"; };
+		118FCBAABA162BA17933C789 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		1328D9B60FE65E8A00D227FF /* cutemaze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cutemaze.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1328D9DD0FE6680500D227FF /* HAdapt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HAdapt.c; path = atk160/HTKLib/HAdapt.c; sourceTree = "<group>"; };
+		1328D9DE0FE6680500D227FF /* HAdapt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HAdapt.h; path = atk160/HTKLib/HAdapt.h; sourceTree = "<group>"; };
+		1328D9DF0FE6680500D227FF /* HAudio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HAudio.c; path = atk160/HTKLib/HAudio.c; sourceTree = "<group>"; };
+		1328D9E00FE6680500D227FF /* HDict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HDict.h; path = atk160/HTKLib/HDict.h; sourceTree = "<group>"; };
+		1328D9E10FE6680500D227FF /* HFB.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HFB.c; path = atk160/HTKLib/HFB.c; sourceTree = "<group>"; };
+		1328D9E20FE6680500D227FF /* HFB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HFB.h; path = atk160/HTKLib/HFB.h; sourceTree = "<group>"; };
+		1328D9E30FE6680500D227FF /* HGraf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HGraf.c; path = atk160/HTKLib/HGraf.c; sourceTree = "<group>"; };
+		1328D9E40FE6680500D227FF /* HGraf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HGraf.h; path = atk160/HTKLib/HGraf.h; sourceTree = "<group>"; };
+		1328D9E50FE6680500D227FF /* HLabel.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HLabel.c; path = atk160/HTKLib/HLabel.c; sourceTree = "<group>"; };
+		1328D9E60FE6680500D227FF /* HLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HLabel.h; path = atk160/HTKLib/HLabel.h; sourceTree = "<group>"; };
+		1328D9E70FE6680500D227FF /* HLat.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HLat.c; path = atk160/HTKLib/HLat.c; sourceTree = "<group>"; };
+		1328D9E80FE6680500D227FF /* HLat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HLat.h; path = atk160/HTKLib/HLat.h; sourceTree = "<group>"; };
+		1328D9E90FE6680500D227FF /* HLM.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HLM.c; path = atk160/HTKLib/HLM.c; sourceTree = "<group>"; };
+		1328D9EA0FE6680500D227FF /* HLM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HLM.h; path = atk160/HTKLib/HLM.h; sourceTree = "<group>"; };
+		1328D9EB0FE6680500D227FF /* HMath.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HMath.c; path = atk160/HTKLib/HMath.c; sourceTree = "<group>"; };
+		1328D9EC0FE6680500D227FF /* HMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HMath.h; path = atk160/HTKLib/HMath.h; sourceTree = "<group>"; };
+		1328D9ED0FE6680500D227FF /* HMem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HMem.c; path = atk160/HTKLib/HMem.c; sourceTree = "<group>"; };
+		1328D9EE0FE6680500D227FF /* HMem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HMem.h; path = atk160/HTKLib/HMem.h; sourceTree = "<group>"; };
+		1328D9EF0FE6680500D227FF /* HModel.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HModel.c; path = atk160/HTKLib/HModel.c; sourceTree = "<group>"; };
+		1328D9F00FE6680500D227FF /* HModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HModel.h; path = atk160/HTKLib/HModel.h; sourceTree = "<group>"; };
+		1328D9F10FE6680500D227FF /* HNBest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HNBest.c; path = atk160/HTKLib/HNBest.c; sourceTree = "<group>"; };
+		1328D9F20FE6680500D227FF /* HNBest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HNBest.h; path = atk160/HTKLib/HNBest.h; sourceTree = "<group>"; };
+		1328D9F30FE6680500D227FF /* HNet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HNet.c; path = atk160/HTKLib/HNet.c; sourceTree = "<group>"; };
+		1328D9F40FE6680500D227FF /* HNet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HNet.h; path = atk160/HTKLib/HNet.h; sourceTree = "<group>"; };
+		1328D9F50FE6680500D227FF /* HParm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HParm.c; path = atk160/HTKLib/HParm.c; sourceTree = "<group>"; };
+		1328D9F60FE6680500D227FF /* HParm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HParm.h; path = atk160/HTKLib/HParm.h; sourceTree = "<group>"; };
+		1328D9F70FE6680500D227FF /* HRec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HRec.c; path = atk160/HTKLib/HRec.c; sourceTree = "<group>"; };
+		1328D9F80FE6680500D227FF /* HRec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HRec.h; path = atk160/HTKLib/HRec.h; sourceTree = "<group>"; };
+		1328D9F90FE6680500D227FF /* HShell.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HShell.c; path = atk160/HTKLib/HShell.c; sourceTree = "<group>"; };
+		1328D9FA0FE6680500D227FF /* HShell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HShell.h; path = atk160/HTKLib/HShell.h; sourceTree = "<group>"; };
+		1328D9FB0FE6680500D227FF /* HSigP.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HSigP.c; path = atk160/HTKLib/HSigP.c; sourceTree = "<group>"; };
+		1328D9FC0FE6680500D227FF /* HSigP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HSigP.h; path = atk160/HTKLib/HSigP.h; sourceTree = "<group>"; };
+		1328D9FD0FE6680500D227FF /* HThreads.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HThreads.c; path = atk160/HTKLib/HThreads.c; sourceTree = "<group>"; };
+		1328D9FE0FE6680500D227FF /* HThreads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HThreads.h; path = atk160/HTKLib/HThreads.h; sourceTree = "<group>"; };
+		1328D9FF0FE6680500D227FF /* HTrain.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HTrain.c; path = atk160/HTKLib/HTrain.c; sourceTree = "<group>"; };
+		1328DA000FE6680500D227FF /* HTrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTrain.h; path = atk160/HTKLib/HTrain.h; sourceTree = "<group>"; };
+		1328DA010FE6680500D227FF /* HUtil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HUtil.c; path = atk160/HTKLib/HUtil.c; sourceTree = "<group>"; };
+		1328DA020FE6680500D227FF /* HUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HUtil.h; path = atk160/HTKLib/HUtil.h; sourceTree = "<group>"; };
+		1328DA030FE6680500D227FF /* HVQ.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HVQ.c; path = atk160/HTKLib/HVQ.c; sourceTree = "<group>"; };
+		1328DA040FE6680500D227FF /* HVQ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HVQ.h; path = atk160/HTKLib/HVQ.h; sourceTree = "<group>"; };
+		1328DA050FE6680500D227FF /* HWave.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HWave.c; path = atk160/HTKLib/HWave.c; sourceTree = "<group>"; };
+		1328DA060FE6680500D227FF /* HWave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HWave.h; path = atk160/HTKLib/HWave.h; sourceTree = "<group>"; };
+		1328DA070FE6680500D227FF /* HDict.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HDict.c; path = atk160/HTKLib/HDict.c; sourceTree = "<group>"; };
+		1328DA080FE6680500D227FF /* HAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HAudio.h; path = atk160/HTKLib/HAudio.h; sourceTree = "<group>"; };
+		1328DA1F0FE6682C00D227FF /* ABuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ABuffer.cpp; path = atk160/ATKLib/ABuffer.cpp; sourceTree = "<group>"; };
+		1328DA200FE6682C00D227FF /* ABuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABuffer.h; path = atk160/ATKLib/ABuffer.h; sourceTree = "<group>"; };
+		1328DA210FE6682C00D227FF /* ACode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ACode.cpp; path = atk160/ATKLib/ACode.cpp; sourceTree = "<group>"; };
+		1328DA220FE6682C00D227FF /* ACode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ACode.h; path = atk160/ATKLib/ACode.h; sourceTree = "<group>"; };
+		1328DA230FE6682C00D227FF /* AComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AComponent.cpp; path = atk160/ATKLib/AComponent.cpp; sourceTree = "<group>"; };
+		1328DA240FE6682C00D227FF /* AComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AComponent.h; path = atk160/ATKLib/AComponent.h; sourceTree = "<group>"; };
+		1328DA250FE6682C00D227FF /* ADict.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ADict.cpp; path = atk160/ATKLib/ADict.cpp; sourceTree = "<group>"; };
+		1328DA260FE6682C00D227FF /* ADict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADict.h; path = atk160/ATKLib/ADict.h; sourceTree = "<group>"; };
+		1328DA270FE6682C00D227FF /* AGram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AGram.cpp; path = atk160/ATKLib/AGram.cpp; sourceTree = "<group>"; };
+		1328DA280FE6682C00D227FF /* AGram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGram.h; path = atk160/ATKLib/AGram.h; sourceTree = "<group>"; };
+		1328DA290FE6682C00D227FF /* AHmms.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AHmms.cpp; path = atk160/ATKLib/AHmms.cpp; sourceTree = "<group>"; };
+		1328DA2A0FE6682C00D227FF /* AHmms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AHmms.h; path = atk160/ATKLib/AHmms.h; sourceTree = "<group>"; };
+		1328DA2B0FE6682C00D227FF /* AHTK.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AHTK.cpp; path = atk160/ATKLib/AHTK.cpp; sourceTree = "<group>"; };
+		1328DA2C0FE6682C00D227FF /* AHTK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AHTK.h; path = atk160/ATKLib/AHTK.h; sourceTree = "<group>"; };
+		1328DA2D0FE6682C00D227FF /* AIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AIO.cpp; path = atk160/ATKLib/AIO.cpp; sourceTree = "<group>"; };
+		1328DA2E0FE6682C00D227FF /* AIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AIO.h; path = atk160/ATKLib/AIO.h; sourceTree = "<group>"; };
+		1328DA2F0FE6682C00D227FF /* ALog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ALog.cpp; path = atk160/ATKLib/ALog.cpp; sourceTree = "<group>"; };
+		1328DA300FE6682C00D227FF /* ALog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ALog.h; path = atk160/ATKLib/ALog.h; sourceTree = "<group>"; };
+		1328DA310FE6682C00D227FF /* AMonitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AMonitor.cpp; path = atk160/ATKLib/AMonitor.cpp; sourceTree = "<group>"; };
+		1328DA320FE6682C00D227FF /* AMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AMonitor.h; path = atk160/ATKLib/AMonitor.h; sourceTree = "<group>"; };
+		1328DA330FE6682C00D227FF /* ANGram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ANGram.cpp; path = atk160/ATKLib/ANGram.cpp; sourceTree = "<group>"; };
+		1328DA340FE6682C00D227FF /* ANGram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ANGram.h; path = atk160/ATKLib/ANGram.h; sourceTree = "<group>"; };
+		1328DA350FE6682C00D227FF /* APacket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = APacket.cpp; path = atk160/ATKLib/APacket.cpp; sourceTree = "<group>"; };
+		1328DA360FE6682C00D227FF /* APacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APacket.h; path = atk160/ATKLib/APacket.h; sourceTree = "<group>"; };
+		1328DA370FE6682C00D227FF /* ARec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ARec.cpp; path = atk160/ATKLib/ARec.cpp; sourceTree = "<group>"; };
+		1328DA380FE6682C00D227FF /* ARec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARec.h; path = atk160/ATKLib/ARec.h; sourceTree = "<group>"; };
+		1328DA390FE6682C00D227FF /* AResource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AResource.cpp; path = atk160/ATKLib/AResource.cpp; sourceTree = "<group>"; };
+		1328DA3A0FE6682C00D227FF /* AResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AResource.h; path = atk160/ATKLib/AResource.h; sourceTree = "<group>"; };
+		1328DA3B0FE6682C00D227FF /* ARMan.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ARMan.cpp; path = atk160/ATKLib/ARMan.cpp; sourceTree = "<group>"; };
+		1328DA3C0FE6682C00D227FF /* ARMan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARMan.h; path = atk160/ATKLib/ARMan.h; sourceTree = "<group>"; };
+		1328DA3D0FE6682C00D227FF /* ASource.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ASource.cpp; path = atk160/ATKLib/ASource.cpp; sourceTree = "<group>"; };
+		1328DA3E0FE6682C00D227FF /* ASource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASource.h; path = atk160/ATKLib/ASource.h; sourceTree = "<group>"; };
+		1328DA3F0FE6682C00D227FF /* ASplash.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ASplash.cpp; path = atk160/ATKLib/ASplash.cpp; sourceTree = "<group>"; };
+		1328DA400FE6682C00D227FF /* ASplash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASplash.h; path = atk160/ATKLib/ASplash.h; sourceTree = "<group>"; };
+		1328DA410FE6682C00D227FF /* ASyn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ASyn.cpp; path = atk160/ATKLib/ASyn.cpp; sourceTree = "<group>"; };
+		1328DA420FE6682C00D227FF /* ASyn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASyn.h; path = atk160/ATKLib/ASyn.h; sourceTree = "<group>"; };
+		1328DA430FE6682C00D227FF /* ATee.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ATee.cpp; path = atk160/ATKLib/ATee.cpp; sourceTree = "<group>"; };
+		1328DA440FE6682C00D227FF /* ATee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ATee.h; path = atk160/ATKLib/ATee.h; sourceTree = "<group>"; };
+		1328DA580FE6685000D227FF /* FliteSynthesiser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FliteSynthesiser.h; path = atk160/SYNLib/FliteSynthesiser.h; sourceTree = "<group>"; };
+		1328DA590FE6687300D227FF /* HAudioDummy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = HAudioDummy.c; path = ATKMod/HAudioDummy.c; sourceTree = "<group>"; };
+		1328DA5B0FE6687C00D227FF /* ASourceNew.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ASourceNew.cpp; path = ATKMod/ASourceNew.cpp; sourceTree = "<group>"; };
+		1328DA770FE672C000D227FF /* libHTK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHTK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1328DA7F0FE672EF00D227FF /* libATK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libATK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1328DAF90FE68FFF00D227FF /* libX11.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libX11.dylib; path = /usr/X11/lib/libX11.dylib; sourceTree = "<absolute>"; };
+		1328DAFB0FE6903F00D227FF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
+		185FBC6310E35CB6C4F8D35F /* moc_settings.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_settings.cpp; sourceTree = "<group>"; };
+		1BA74E6000B1828C75439555 /* theme.qrc */ = {isa = PBXFileReference; lastKnownFileType = text; name = theme.qrc; path = themes/theme.qrc; sourceTree = "<group>"; };
+		22B8EB497DD4812281107EF2 /* window.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = window.cpp; sourceTree = "<group>"; };
+		27AE7A480FD6C52FCA80FECD /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
+		2B601351BBFD3F9918188CF7 /* window.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = window.h; sourceTree = "<group>"; };
+		2D7FF9EBB69BCF2C19DC629B /* QtSvg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtSvg.framework; path = /Library/Frameworks/QtSvg.framework; sourceTree = "<absolute>"; };
+		344604131DCD8B4115A0DF58 /* AQCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AQCode.h; sourceTree = "<group>"; };
+		5265225BB2EED4C4FAE212B4 /* settings.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = settings.cpp; sourceTree = "<group>"; };
+		55F764E0B1002082AE21DC89 /* moc_board.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_board.cpp; sourceTree = "<group>"; };
+		5A2E998889A5A6E4C2197BC2 /* moc_scores.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = moc_scores.cpp; sourceTree = "<group>"; };
+		6E270A8A07610EE8DBFD9275 /* settings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = settings.h; sourceTree = "<group>"; };
+		6F81AA53335E786E90F660E4 /* cutemaze.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = cutemaze.icns; path = icons/cutemaze.icns; sourceTree = "<group>"; };
+		703126FDE1B4602701F1C445 /* qrc_theme.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = qrc_theme.cpp; sourceTree = "<group>"; };
+		7BC2E65A5E699A5E5D834CA2 /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = /Library/Frameworks/QtCore.framework; sourceTree = "<absolute>"; };
+		81F290440563721A0F9A62D8 /* theme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = theme.h; sourceTree = "<group>"; };
+		821416211D63F190AAAD016A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		842E16A6C64110D768FAFA28 /* scores.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = scores.cpp; sourceTree = "<group>"; };
+		9181152D624FF55E573BF827 /* ATKCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATKCode.h; sourceTree = "<group>"; };
+		9B36DA7E32F0304E780E7972 /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = /Library/Frameworks/QtGui.framework; sourceTree = "<absolute>"; };
+		A7818BBAAD2065984AB678C1 /* cell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cell.h; sourceTree = "<group>"; };
+		AC6C84ABB20375E1A7EA6304 /* qrc_preview.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = qrc_preview.cpp; sourceTree = "<group>"; };
+		DA138F75C9F545CDAE7FB264 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		E39BA1AEBBEFBA3F6ADC5C73 /* maze.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = maze.cpp; sourceTree = "<group>"; };
+		E7E2BA32D73D039E9670DF43 /* theme.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = theme.cpp; sourceTree = "<group>"; };
+		EAAD36D050D10274A3FD1DC4 /* AQCode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AQCode.cpp; sourceTree = "<group>"; };
+		EDD9830D404B8F6A1F051809 /* cutemaze.pro */ = {isa = PBXFileReference; lastKnownFileType = text; path = cutemaze.pro; sourceTree = "<group>"; };
+		F6D3987D5001B3FDEBB68F83 /* board.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = board.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1328DA750FE672C000D227FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1328DA7D0FE672EF00D227FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A1043669E6E5A7426EA502A /* Frameworks & Libraries */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1328DAF50FE68C2D00D227FF /* libHTK.a in Frameworks & Libraries */,
+				1328DAF60FE68C3000D227FF /* libATK.a in Frameworks & Libraries */,
+				08D8EC4D0C273BC5E194E43D /* QtSvg.framework in Frameworks & Libraries */,
+				501667F26B3C1FF6767A7C12 /* QtGui.framework in Frameworks & Libraries */,
+				C8FD4A1AAA37CF2CA2824CCF /* Carbon.framework in Frameworks & Libraries */,
+				51D4DBF7CB8537BE86EBD055 /* AppKit.framework in Frameworks & Libraries */,
+				069D05B0128AE5DC7EE31738 /* QtCore.framework in Frameworks & Libraries */,
+				F9E76E570E10AF14870553A7 /* ApplicationServices.framework in Frameworks & Libraries */,
+				1328DAFA0FE68FFF00D227FF /* libX11.dylib in Frameworks & Libraries */,
+				1328DAFC0FE6903F00D227FF /* AudioToolbox.framework in Frameworks & Libraries */,
+			);
+			name = "Frameworks & Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05596AB53D8D521C69802C27 /* cutemaze */ = {
+			isa = PBXGroup;
+			children = (
+				1328DAF90FE68FFF00D227FF /* libX11.dylib */,
+				1328D9DB0FE667DB00D227FF /* Flite */,
+				1328D9DA0FE667D300D227FF /* ATKlib */,
+				1328D9D80FE667A800D227FF /* HTKlib */,
+				FB61758D0F0FDA4BA867C3D5 /* Sources */,
+				46E892BBB6BB6952967E0561 /* Temporary Sources */,
+				883D7615C4D2DE3FA1218F12 /* Headers */,
+				7CABE3C80E79AD2B307756D2 /* Sources [qmake] */,
+				52C235EBF1C9B07808119459 /* Sources [RCC] */,
+				ED1E82605DD74B483AF3C982 /* External Frameworks and Libraries */,
+				1328D9B70FE65E8A00D227FF /* Products */,
+			);
+			name = cutemaze;
+			sourceTree = "<group>";
+		};
+		1328D9B70FE65E8A00D227FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1328D9B60FE65E8A00D227FF /* cutemaze.app */,
+				1328DA770FE672C000D227FF /* libHTK.a */,
+				1328DA7F0FE672EF00D227FF /* libATK.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1328D9D80FE667A800D227FF /* HTKlib */ = {
+			isa = PBXGroup;
+			children = (
+				1328DA590FE6687300D227FF /* HAudioDummy.c */,
+				1328D9DD0FE6680500D227FF /* HAdapt.c */,
+				1328D9DE0FE6680500D227FF /* HAdapt.h */,
+				1328D9DF0FE6680500D227FF /* HAudio.c */,
+				1328D9E00FE6680500D227FF /* HDict.h */,
+				1328D9E10FE6680500D227FF /* HFB.c */,
+				1328D9E20FE6680500D227FF /* HFB.h */,
+				1328D9E30FE6680500D227FF /* HGraf.c */,
+				1328D9E40FE6680500D227FF /* HGraf.h */,
+				1328D9E50FE6680500D227FF /* HLabel.c */,
+				1328D9E60FE6680500D227FF /* HLabel.h */,
+				1328D9E70FE6680500D227FF /* HLat.c */,
+				1328D9E80FE6680500D227FF /* HLat.h */,
+				1328D9E90FE6680500D227FF /* HLM.c */,
+				1328D9EA0FE6680500D227FF /* HLM.h */,
+				1328D9EB0FE6680500D227FF /* HMath.c */,
+				1328D9EC0FE6680500D227FF /* HMath.h */,
+				1328D9ED0FE6680500D227FF /* HMem.c */,
+				1328D9EE0FE6680500D227FF /* HMem.h */,
+				1328D9EF0FE6680500D227FF /* HModel.c */,
+				1328D9F00FE6680500D227FF /* HModel.h */,
+				1328D9F10FE6680500D227FF /* HNBest.c */,
+				1328D9F20FE6680500D227FF /* HNBest.h */,
+				1328D9F30FE6680500D227FF /* HNet.c */,
+				1328D9F40FE6680500D227FF /* HNet.h */,
+				1328D9F50FE6680500D227FF /* HParm.c */,
+				1328D9F60FE6680500D227FF /* HParm.h */,
+				1328D9F70FE6680500D227FF /* HRec.c */,
+				1328D9F80FE6680500D227FF /* HRec.h */,
+				1328D9F90FE6680500D227FF /* HShell.c */,
+				1328D9FA0FE6680500D227FF /* HShell.h */,
+				1328D9FB0FE6680500D227FF /* HSigP.c */,
+				1328D9FC0FE6680500D227FF /* HSigP.h */,
+				1328D9FD0FE6680500D227FF /* HThreads.c */,
+				1328D9FE0FE6680500D227FF /* HThreads.h */,
+				1328D9FF0FE6680500D227FF /* HTrain.c */,
+				1328DA000FE6680500D227FF /* HTrain.h */,
+				1328DA010FE6680500D227FF /* HUtil.c */,
+				1328DA020FE6680500D227FF /* HUtil.h */,
+				1328DA030FE6680500D227FF /* HVQ.c */,
+				1328DA040FE6680500D227FF /* HVQ.h */,
+				1328DA050FE6680500D227FF /* HWave.c */,
+				1328DA060FE6680500D227FF /* HWave.h */,
+				1328DA070FE6680500D227FF /* HDict.c */,
+				1328DA080FE6680500D227FF /* HAudio.h */,
+			);
+			name = HTKlib;
+			sourceTree = "<group>";
+		};
+		1328D9DA0FE667D300D227FF /* ATKlib */ = {
+			isa = PBXGroup;
+			children = (
+				1328DA5B0FE6687C00D227FF /* ASourceNew.cpp */,
+				1328DA1F0FE6682C00D227FF /* ABuffer.cpp */,
+				1328DA200FE6682C00D227FF /* ABuffer.h */,
+				1328DA210FE6682C00D227FF /* ACode.cpp */,
+				1328DA220FE6682C00D227FF /* ACode.h */,
+				1328DA230FE6682C00D227FF /* AComponent.cpp */,
+				1328DA240FE6682C00D227FF /* AComponent.h */,
+				1328DA250FE6682C00D227FF /* ADict.cpp */,
+				1328DA260FE6682C00D227FF /* ADict.h */,
+				1328DA270FE6682C00D227FF /* AGram.cpp */,
+				1328DA280FE6682C00D227FF /* AGram.h */,
+				1328DA290FE6682C00D227FF /* AHmms.cpp */,
+				1328DA2A0FE6682C00D227FF /* AHmms.h */,
+				1328DA2B0FE6682C00D227FF /* AHTK.cpp */,
+				1328DA2C0FE6682C00D227FF /* AHTK.h */,
+				1328DA2D0FE6682C00D227FF /* AIO.cpp */,
+				1328DA2E0FE6682C00D227FF /* AIO.h */,
+				1328DA2F0FE6682C00D227FF /* ALog.cpp */,
+				1328DA300FE6682C00D227FF /* ALog.h */,
+				1328DA310FE6682C00D227FF /* AMonitor.cpp */,
+				1328DA320FE6682C00D227FF /* AMonitor.h */,
+				1328DA330FE6682C00D227FF /* ANGram.cpp */,
+				1328DA340FE6682C00D227FF /* ANGram.h */,
+				1328DA350FE6682C00D227FF /* APacket.cpp */,
+				1328DA360FE6682C00D227FF /* APacket.h */,
+				1328DA370FE6682C00D227FF /* ARec.cpp */,
+				1328DA380FE6682C00D227FF /* ARec.h */,
+				1328DA390FE6682C00D227FF /* AResource.cpp */,
+				1328DA3A0FE6682C00D227FF /* AResource.h */,
+				1328DA3B0FE6682C00D227FF /* ARMan.cpp */,
+				1328DA3C0FE6682C00D227FF /* ARMan.h */,
+				1328DA3D0FE6682C00D227FF /* ASource.cpp */,
+				1328DA3E0FE6682C00D227FF /* ASource.h */,
+				1328DA3F0FE6682C00D227FF /* ASplash.cpp */,
+				1328DA400FE6682C00D227FF /* ASplash.h */,
+				1328DA410FE6682C00D227FF /* ASyn.cpp */,
+				1328DA420FE6682C00D227FF /* ASyn.h */,
+				1328DA430FE6682C00D227FF /* ATee.cpp */,
+				1328DA440FE6682C00D227FF /* ATee.h */,
+			);
+			name = ATKlib;
+			sourceTree = "<group>";
+		};
+		1328D9DB0FE667DB00D227FF /* Flite */ = {
+			isa = PBXGroup;
+			children = (
+				1328DA580FE6685000D227FF /* FliteSynthesiser.h */,
+			);
+			name = Flite;
+			sourceTree = "<group>";
+		};
+		2191A54B0E31AC41465064EB /* themes */ = {
+			isa = PBXGroup;
+			children = (
+				1BA74E6000B1828C75439555 /* theme.qrc */,
+			);
+			name = themes;
+			sourceTree = "<group>";
+		};
+		46E892BBB6BB6952967E0561 /* Temporary Sources */ = {
+			isa = PBXGroup;
+			children = (
+				55F764E0B1002082AE21DC89 /* moc_board.cpp */,
+				5A2E998889A5A6E4C2197BC2 /* moc_scores.cpp */,
+				185FBC6310E35CB6C4F8D35F /* moc_settings.cpp */,
+				703126FDE1B4602701F1C445 /* qrc_theme.cpp */,
+				AC6C84ABB20375E1A7EA6304 /* qrc_preview.cpp */,
+			);
+			name = "Temporary Sources";
+			sourceTree = "<group>";
+		};
+		52C235EBF1C9B07808119459 /* Sources [RCC] */ = {
+			isa = PBXGroup;
+			children = (
+				2191A54B0E31AC41465064EB /* themes */,
+				7B5C784D69F9C5CFE5B37850 /* preview */,
+			);
+			name = "Sources [RCC]";
+			sourceTree = "<group>";
+		};
+		7B5C784D69F9C5CFE5B37850 /* preview */ = {
+			isa = PBXGroup;
+			children = (
+				0BD40B87F34B95B2442C88B3 /* preview.qrc */,
+			);
+			name = preview;
+			sourceTree = "<group>";
+		};
+		7CABE3C80E79AD2B307756D2 /* Sources [qmake] */ = {
+			isa = PBXGroup;
+			children = (
+				EDD9830D404B8F6A1F051809 /* cutemaze.pro */,
+			);
+			name = "Sources [qmake]";
+			sourceTree = "<group>";
+		};
+		80594147FF38978F0E91964D /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				6F81AA53335E786E90F660E4 /* cutemaze.icns */,
+			);
+			name = icons;
+			sourceTree = "<group>";
+		};
+		883D7615C4D2DE3FA1218F12 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				344604131DCD8B4115A0DF58 /* AQCode.h */,
+				9181152D624FF55E573BF827 /* ATKCode.h */,
+				07C09E58C6A67D0C667536C9 /* board.h */,
+				A7818BBAAD2065984AB678C1 /* cell.h */,
+				0D77DB9F2B1DA8A5A8D011D0 /* maze.h */,
+				03A398382108752B5E31F8E8 /* scores.h */,
+				6E270A8A07610EE8DBFD9275 /* settings.h */,
+				81F290440563721A0F9A62D8 /* theme.h */,
+				2B601351BBFD3F9918188CF7 /* window.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		ED1E82605DD74B483AF3C982 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1328DAFB0FE6903F00D227FF /* AudioToolbox.framework */,
+				2D7FF9EBB69BCF2C19DC629B /* QtSvg.framework */,
+				9B36DA7E32F0304E780E7972 /* QtGui.framework */,
+				DA138F75C9F545CDAE7FB264 /* Carbon.framework */,
+				821416211D63F190AAAD016A /* AppKit.framework */,
+				7BC2E65A5E699A5E5D834CA2 /* QtCore.framework */,
+				27AE7A480FD6C52FCA80FECD /* ApplicationServices.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		FB61758D0F0FDA4BA867C3D5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EAAD36D050D10274A3FD1DC4 /* AQCode.cpp */,
+				05AE800837DCC5E1EFB0B245 /* ATKCode.cpp */,
+				F6D3987D5001B3FDEBB68F83 /* board.cpp */,
+				03F4D77439DFFBC77BCA85EF /* cell.cpp */,
+				118FCBAABA162BA17933C789 /* main.cpp */,
+				E39BA1AEBBEFBA3F6ADC5C73 /* maze.cpp */,
+				842E16A6C64110D768FAFA28 /* scores.cpp */,
+				5265225BB2EED4C4FAE212B4 /* settings.cpp */,
+				E7E2BA32D73D039E9670DF43 /* theme.cpp */,
+				22B8EB497DD4812281107EF2 /* window.cpp */,
+				80594147FF38978F0E91964D /* icons */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1328DA730FE672C000D227FF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1328DA880FE6733300D227FF /* HAdapt.h in Headers */,
+				1328DA8A0FE6733300D227FF /* HAudio.h in Headers */,
+				1328DA8F0FE6733300D227FF /* HFB.h in Headers */,
+				1328DA8D0FE6733300D227FF /* HDict.h in Headers */,
+				1328DA910FE6733300D227FF /* HGraf.h in Headers */,
+				1328DA930FE6733300D227FF /* HLabel.h in Headers */,
+				1328DAA10FE6733300D227FF /* HNet.h in Headers */,
+				1328DA950FE6733300D227FF /* HLat.h in Headers */,
+				1328DA990FE6733300D227FF /* HMath.h in Headers */,
+				1328DA970FE6733300D227FF /* HLM.h in Headers */,
+				1328DA9D0FE6733300D227FF /* HModel.h in Headers */,
+				1328DA9B0FE6733300D227FF /* HMem.h in Headers */,
+				1328DAA30FE6733300D227FF /* HParm.h in Headers */,
+				1328DAA70FE6733300D227FF /* HShell.h in Headers */,
+				1328DAA50FE6733300D227FF /* HRec.h in Headers */,
+				1328DA9F0FE6733300D227FF /* HNBest.h in Headers */,
+				1328DAA90FE6733300D227FF /* HSigP.h in Headers */,
+				1328DAB10FE6733300D227FF /* HVQ.h in Headers */,
+				1328DAAD0FE6733300D227FF /* HTrain.h in Headers */,
+				1328DAAF0FE6733300D227FF /* HUtil.h in Headers */,
+				1328DAAB0FE6733300D227FF /* HThreads.h in Headers */,
+				1328DAB30FE6733300D227FF /* HWave.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1328DA7B0FE672EF00D227FF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1328DABA0FE673D600D227FF /* ABuffer.h in Headers */,
+				1328DAC00FE673D600D227FF /* ADict.h in Headers */,
+				1328DABC0FE673D600D227FF /* ACode.h in Headers */,
+				1328DAC40FE673D600D227FF /* AHmms.h in Headers */,
+				1328DAC20FE673D600D227FF /* AGram.h in Headers */,
+				1328DAC80FE673D600D227FF /* AIO.h in Headers */,
+				1328DABE0FE673D600D227FF /* AComponent.h in Headers */,
+				1328DACA0FE673D600D227FF /* ALog.h in Headers */,
+				1328DACE0FE673D600D227FF /* ANGram.h in Headers */,
+				1328DAD20FE673D600D227FF /* ARec.h in Headers */,
+				1328DACC0FE673D600D227FF /* AMonitor.h in Headers */,
+				1328DAC60FE673D600D227FF /* AHTK.h in Headers */,
+				1328DAD40FE673D600D227FF /* AResource.h in Headers */,
+				1328DAD00FE673D600D227FF /* APacket.h in Headers */,
+				1328DAD60FE673D600D227FF /* ARMan.h in Headers */,
+				1328DADA0FE673D600D227FF /* ASplash.h in Headers */,
+				1328DADC0FE673D600D227FF /* ASyn.h in Headers */,
+				1328DADE0FE673D600D227FF /* ATee.h in Headers */,
+				1328DAD80FE673D600D227FF /* ASource.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1328DA760FE672C000D227FF /* HTKlib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1328DA7A0FE672DF00D227FF /* Build configuration list for PBXNativeTarget "HTKlib" */;
+			buildPhases = (
+				1328DA730FE672C000D227FF /* Headers */,
+				1328DA740FE672C000D227FF /* Sources */,
+				1328DA750FE672C000D227FF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HTKlib;
+			productName = HTKlib;
+			productReference = 1328DA770FE672C000D227FF /* libHTK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		1328DA7E0FE672EF00D227FF /* ATKlib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1328DA860FE6730100D227FF /* Build configuration list for PBXNativeTarget "ATKlib" */;
+			buildPhases = (
+				1328DA7B0FE672EF00D227FF /* Headers */,
+				1328DA7C0FE672EF00D227FF /* Sources */,
+				1328DA7D0FE672EF00D227FF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ATKlib;
+			productName = ATKlib;
+			productReference = 1328DA7F0FE672EF00D227FF /* libATK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		392775E4E42E7D185088783D /* cutemaze */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1328D9D00FE65E9700D227FF /* Build configuration list for PBXNativeTarget "cutemaze" */;
+			buildPhases = (
+				D7BA7D76DAB5DD13389D6332 /* Qt Qmake */,
+				A0A52A2ADF7A1E2A99738674 /* Qt Preprocessors */,
+				F6069D5A5DA8AA28EDB8B3C6 /* Project Copy */,
+				C29B8785722055ED95EF7B57 /* Build Sources */,
+				2A1043669E6E5A7426EA502A /* Frameworks & Libraries */,
+				3787F99312C85FF0073FD7BA /* Bundle Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cutemaze;
+			productName = cutemaze;
+			productReference = 1328D9B60FE65E8A00D227FF /* cutemaze.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91B15E841AA80083484172DE /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 2A951308CDB28F104D0A4BD2 /* Build configuration list for PBXProject "cutemaze" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 1;
+			mainGroup = 05596AB53D8D521C69802C27 /* cutemaze */;
+			productRefGroup = 1328D9B70FE65E8A00D227FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				392775E4E42E7D185088783D /* cutemaze */,
+				1328DA760FE672C000D227FF /* HTKlib */,
+				1328DA7E0FE672EF00D227FF /* ATKlib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3787F99312C85FF0073FD7BA /* Bundle Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DD57785CD6F60FE4815D86F /* cutemaze.icns in Bundle Resources */,
+			);
+			name = "Bundle Resources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A0A52A2ADF7A1E2A99738674 /* Qt Preprocessors */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Qt Preprocessors";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/Terje/Documents/Skole/Sirkus/cutemaze/cutemaze -f cutemaze.xcodeproj/qt_preprocess.mak";
+		};
+		D7BA7D76DAB5DD13389D6332 /* Qt Qmake */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Qt Qmake";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/Terje/Documents/Skole/Sirkus/cutemaze/cutemaze -f cutemaze.xcodeproj/qt_makeqmake.mak";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1328DA740FE672C000D227FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1328DB0E0FE6919300D227FF /* HAudioDummy.c in Sources */,
+				1328DA870FE6733300D227FF /* HAdapt.c in Sources */,
+				1328DA8C0FE6733300D227FF /* HDict.c in Sources */,
+				1328DA8E0FE6733300D227FF /* HFB.c in Sources */,
+				1328DA900FE6733300D227FF /* HGraf.c in Sources */,
+				1328DA920FE6733300D227FF /* HLabel.c in Sources */,
+				1328DA940FE6733300D227FF /* HLat.c in Sources */,
+				1328DA960FE6733300D227FF /* HLM.c in Sources */,
+				1328DA980FE6733300D227FF /* HMath.c in Sources */,
+				1328DA9A0FE6733300D227FF /* HMem.c in Sources */,
+				1328DA9C0FE6733300D227FF /* HModel.c in Sources */,
+				1328DA9E0FE6733300D227FF /* HNBest.c in Sources */,
+				1328DAA00FE6733300D227FF /* HNet.c in Sources */,
+				1328DAA20FE6733300D227FF /* HParm.c in Sources */,
+				1328DAA40FE6733300D227FF /* HRec.c in Sources */,
+				1328DAA60FE6733300D227FF /* HShell.c in Sources */,
+				1328DAA80FE6733300D227FF /* HSigP.c in Sources */,
+				1328DAAA0FE6733300D227FF /* HThreads.c in Sources */,
+				1328DAAC0FE6733300D227FF /* HTrain.c in Sources */,
+				1328DAAE0FE6733300D227FF /* HUtil.c in Sources */,
+				1328DAB00FE6733300D227FF /* HVQ.c in Sources */,
+				1328DAB20FE6733300D227FF /* HWave.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1328DA7C0FE672EF00D227FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1328DB0F0FE691B400D227FF /* ASourceNew.cpp in Sources */,
+				1328DAB90FE673D600D227FF /* ABuffer.cpp in Sources */,
+				1328DABB0FE673D600D227FF /* ACode.cpp in Sources */,
+				1328DABD0FE673D600D227FF /* AComponent.cpp in Sources */,
+				1328DABF0FE673D600D227FF /* ADict.cpp in Sources */,
+				1328DAC10FE673D600D227FF /* AGram.cpp in Sources */,
+				1328DAC30FE673D600D227FF /* AHmms.cpp in Sources */,
+				1328DAC50FE673D600D227FF /* AHTK.cpp in Sources */,
+				1328DAC70FE673D600D227FF /* AIO.cpp in Sources */,
+				1328DAC90FE673D600D227FF /* ALog.cpp in Sources */,
+				1328DACB0FE673D600D227FF /* AMonitor.cpp in Sources */,
+				1328DACD0FE673D600D227FF /* ANGram.cpp in Sources */,
+				1328DACF0FE673D600D227FF /* APacket.cpp in Sources */,
+				1328DAD10FE673D600D227FF /* ARec.cpp in Sources */,
+				1328DAD30FE673D600D227FF /* AResource.cpp in Sources */,
+				1328DAD50FE673D600D227FF /* ARMan.cpp in Sources */,
+				1328DAD90FE673D600D227FF /* ASplash.cpp in Sources */,
+				1328DADB0FE673D600D227FF /* ASyn.cpp in Sources */,
+				1328DADD0FE673D600D227FF /* ATee.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C29B8785722055ED95EF7B57 /* Build Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC4DEBE2585271D736AE5AD8 /* AQCode.cpp in Build Sources */,
+				4D6E5B26D822A0C11451FE7C /* ATKCode.cpp in Build Sources */,
+				34A5FBF9669DAD0A0CEF237D /* board.cpp in Build Sources */,
+				C1854D0763473FEE47FE5C48 /* cell.cpp in Build Sources */,
+				2B093CA6F071B023A473CED0 /* main.cpp in Build Sources */,
+				818CBC07BC501415B216EA8C /* maze.cpp in Build Sources */,
+				1CBED7D902C0552266FC2FC6 /* scores.cpp in Build Sources */,
+				F03A739FDFB944A527D9A873 /* settings.cpp in Build Sources */,
+				5347A365CDB0ADAAFDBFEA4B /* theme.cpp in Build Sources */,
+				FC203E8953C53F09233D0CFC /* window.cpp in Build Sources */,
+				3571256233BF461F113B4539 /* moc_board.cpp in Build Sources */,
+				CB10675F446A735BEDD8A1A1 /* moc_scores.cpp in Build Sources */,
+				9CB0A8ECEB71BB2030D34769 /* moc_settings.cpp in Build Sources */,
+				052CE29908621CDFD3CB9EF8 /* qrc_theme.cpp in Build Sources */,
+				DC484E4B172ABCC3D8A496E7 /* qrc_preview.cpp in Build Sources */,
+			);
+			name = "Build Sources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1328D9CA0FE65E8C00D227FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_ROOT = /Users/Terje/Documents/Skole/Sirkus/cutemaze/cutemaze;
+				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/QtCore.framework/Versions/4/Headers,
+					/usr/include/QtCore,
+					/Library/Frameworks/QtGui.framework/Versions/4/Headers,
+					/usr/include/QtGui,
+					/Library/Frameworks/QtSvg.framework/Versions/4/Headers,
+					/usr/include/QtSvg,
+					/usr/include,
+					.,
+					.,
+					.,
+					/usr/local/include,
+					/System/Library/Frameworks/CarbonCore.framework/Headers,
+					"/usr/local/Qt4.5/mkspecs/macx-xcode",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LEXFLAGS = "";
+				LIBRARY_SEARCH_PATHS = (
+					/Library/Frameworks,
+					/System/Library/Frameworks/,
+					/usr/X11/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-DQT_SVG_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-DQT_SVG_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-L/Library/Frameworks",
+					"-F/Library/Frameworks",
+					"-lz",
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = cutemaze;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "";
+				YACCFLAGS = "-d";
+			};
+			name = Debug;
+		};
+		1328D9CB0FE65E8C00D227FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_ROOT = /Users/Terje/Documents/Skole/Sirkus/cutemaze/cutemaze;
+				COPY_PHASE_STRIP = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/QtCore.framework/Versions/4/Headers,
+					/usr/include/QtCore,
+					/Library/Frameworks/QtGui.framework/Versions/4/Headers,
+					/usr/include/QtGui,
+					/Library/Frameworks/QtSvg.framework/Versions/4/Headers,
+					/usr/include/QtSvg,
+					/usr/include,
+					.,
+					.,
+					.,
+					/usr/local/include,
+					/System/Library/Frameworks/CarbonCore.framework/Headers,
+					"/usr/local/Qt4.5/mkspecs/macx-xcode",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LEXFLAGS = "";
+				LIBRARY_SEARCH_PATHS = (
+					/Library/Frameworks,
+					/System/Library/Frameworks/,
+					/usr/X11/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-DQT_SVG_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-DQT_SVG_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-L/Library/Frameworks",
+					"-F/Library/Frameworks",
+					"-lz",
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = cutemaze;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "";
+				YACCFLAGS = "-d";
+			};
+			name = Release;
+		};
+		1328D9CC0FE65E8C00D227FF /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_ROOT = /Users/Terje/Documents/Skole/Sirkus/cutemaze/cutemaze;
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/QtCore.framework/Versions/4/Headers,
+					/usr/include/QtCore,
+					/Library/Frameworks/QtGui.framework/Versions/4/Headers,
+					/usr/include/QtGui,
+					/Library/Frameworks/QtSvg.framework/Versions/4/Headers,
+					/usr/include/QtSvg,
+					/usr/include,
+					.,
+					.,
+					.,
+					/usr/local/include,
+					/System/Library/Frameworks/CarbonCore.framework/Headers,
+					"/usr/local/Qt4.5/mkspecs/macx-xcode",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LEXFLAGS = "";
+				LIBRARY_SEARCH_PATHS = (
+					/Library/Frameworks,
+					/System/Library/Frameworks/,
+					/usr/X11/lib,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.3;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-DQT_SVG_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-DQT_SVG_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-L/Library/Frameworks",
+					"-F/Library/Frameworks",
+					"-lz",
+					"-lm",
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = cutemaze;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "";
+				YACCFLAGS = "-d";
+			};
+			name = Default;
+		};
+		1328DA780FE672C100D227FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_CFLAGS = (
+					"$(OTHER_CFLAGS_QUOTED_FOR_TARGET_1)",
+					"-DXGRAFIX",
+					"-DUNIX",
+					"-DATK",
+					"-D_cplusplus",
+					"-D_XOPEN_SOURCE=500",
+					"-D_REENTRANT",
+				);
+				OTHER_CFLAGS_QUOTED_FOR_TARGET_1 = "-D'ARCH=\"darwin\"'";
+				PREBINDING = NO;
+				PRODUCT_NAME = HTK;
+			};
+			name = Debug;
+		};
+		1328DA790FE672C100D227FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = HTKlib;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		1328DA800FE672EF00D227FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = ATK;
+			};
+			name = Debug;
+		};
+		1328DA810FE672EF00D227FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = ATKlib;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		8DB1DD96F65B1BF1FFC506E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+			};
+			name = Debug;
+		};
+		95E1EB2E5DDD587BE5B3E548 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1328D9D00FE65E9700D227FF /* Build configuration list for PBXNativeTarget "cutemaze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1328D9CA0FE65E8C00D227FF /* Debug */,
+				1328D9CB0FE65E8C00D227FF /* Release */,
+				1328D9CC0FE65E8C00D227FF /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		1328DA7A0FE672DF00D227FF /* Build configuration list for PBXNativeTarget "HTKlib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1328DA780FE672C100D227FF /* Debug */,
+				1328DA790FE672C100D227FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1328DA860FE6730100D227FF /* Build configuration list for PBXNativeTarget "ATKlib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1328DA800FE672EF00D227FF /* Debug */,
+				1328DA810FE672EF00D227FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A951308CDB28F104D0A4BD2 /* Build configuration list for PBXProject "cutemaze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DB1DD96F65B1BF1FFC506E0 /* Debug */,
+				95E1EB2E5DDD587BE5B3E548 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91B15E841AA80083484172DE /* Project object */;
+}
