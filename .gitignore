@@ -8,6 +8,6 @@
 *.wav
 *.svn*
 *.png
-build/cutemaze.build/*/*
+build/cutemaze.build/cutemaze.pbxindex/*.pbxbtree
 *.xcodeproj*
 *.app*
