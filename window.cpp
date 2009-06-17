@@ -294,14 +294,13 @@ Window::Window()
 
 	// Setup window
 	setWindowTitle(tr("CuteMaze"));
-	resize(QSettings().value("Size", QSize(448, 448)).toSize());
+	resize(QSettings().value("Size", QSize(896, 896)).toSize());
 	
 	
 //-----------------------------------------------------------------
-//Enable fullscreen?? Terje Gundersen
+// Enable fullscreen?? Terje Gundersen
 
-//	fullScreen = true;
-//	resize(QSettings().value("fullScreen", true).toSize());
+//resize(QSettings().value("fullScreen", true).toSize());
 	
 //-----------------------------------------------------------------
 	

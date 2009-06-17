@@ -58,7 +58,7 @@ Board::Board(QMainWindow* parent)
 
 {
 	connect(qApp, SIGNAL(focusChanged(QWidget*, QWidget*)), this, SLOT(focusChanged()));
-	setMinimumSize(448, 448);
+	setMinimumSize(896, 896);
 
 	m_move_animation = new QTimeLine(100, this);
 	m_move_animation->setFrameRange(0, 3);
@@ -411,6 +411,8 @@ void Board::resizeEvent(QResizeEvent*)
 	size -= (size % 14);
 	float scale = static_cast<float>(size) / 448.0f;
 	m_unit = scale * 32;
+	m_unit = 1 * 32; // changed by Mehdi
+	
 	m_theme->scale(m_unit);
 }
 
@@ -742,7 +744,7 @@ void Board::renderMaze(int frame)
 
 	// Create painter
 	QPainter painter(this);
-	int size = m_unit * 14;
+	int size = m_unit * 26;
 	painter.setClipRect((width() - size) >> 1, (height() - size) >> 1, size, size);
 	painter.translate((width() - size) >> 1, (height() - size) >> 1);
 	painter.translate(-3 * m_unit, -3 * m_unit);
@@ -756,35 +758,35 @@ void Board::renderMaze(int frame)
 	painter.translate(delta * m_col_delta, delta * m_row_delta);
 
 	// Draw background
-	for (int r = 0; r < 8; ++r) {
-		for (int c = 0; c < 8; ++c) {
+	for (int r = 0; r < 11; ++r) {
+		for (int c = 0; c < 11; ++c) {
 			m_theme->draw(painter, c, r, Theme::Background);
 		}
 	}
 
 	// Initialize corners
-	unsigned char corners[8][8];
-	for (int r = 0; r < 8; ++r) {
-		for (int c = 0; c < 8; ++c) {
+	unsigned char corners[11][11];
+	for (int r = 0; r < 11; ++r) {
+		for (int c = 0; c < 11; ++c) {
 			corners[c][r] = 0;
 		}
 	}
 
 	// Setup columns
 	int column_start = 0;
-	int column_count = 7;
+	int column_count = 10;
 	if (column < 1) {
 		column_start = abs(column);
-	} else if (column + 6 >= columns) {
+	} else if (column + 9 >= columns) {
 		column_count = columns - column;
 	}
 
 	// Setup rows
 	int row_start = 0;
-	int row_count = 7;
+	int row_count = 10;
 	if (row < 1) {
 		row_start = abs(row);
-	} else if (row + 6 >= rows) {
+	} else if (row + 9 >= rows) {
 		row_count = rows - row;
 	}
 
@@ -839,8 +841,8 @@ void Board::renderMaze(int frame)
 	}
 
 	// Draw corners
-	for (int r = 0; r < 8; ++r) {
-		for (int c = 0; c < 8; ++c) {
+	for (int r = 0; r < 11; ++r) {
+		for (int c = 0; c < 11; ++c) {
 			unsigned char walls = corners[c][r];
 			if (walls) {
 				m_theme->drawCorner(painter, c, r, walls);
@@ -849,7 +851,7 @@ void Board::renderMaze(int frame)
 	}
 
 	// Draw start
-	QRect view(column, row, 7, 7);
+	QRect view(column, row, 10, 10);
 	if (view.contains(m_start)) {
 		m_theme->draw(painter, m_start.x() - column, m_start.y() - row, Theme::Start);
 	}
