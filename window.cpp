@@ -294,17 +294,12 @@ Window::Window()
 
 	// Setup window
 	setWindowTitle(tr("CuteMaze"));
+	
+//<s>added by mehdi soufifar
+	//original text
+	//resize(QSettings().value("Size", QSize(448, 448)).toSize());
 	resize(QSettings().value("Size", QSize(896, 896)).toSize());
-	
-	
-//-----------------------------------------------------------------
-// Enable fullscreen?? Terje Gundersen
-
-//resize(QSettings().value("fullScreen", true).toSize());
-	
-//-----------------------------------------------------------------
-	
-	
+//</s>
 	// Create auto-save timer
 	QTimer *timer = new QTimer(this);
 	connect(timer, SIGNAL(timeout()), m_board, SLOT(saveGame()));

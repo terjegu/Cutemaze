@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'board.h'
 **
-** Created: Tue Jun 16 10:35:48 2009
+** Created: Wed Jun 17 15:04:02 2009
 **      by: The Qt Meta Object Compiler version 61 (Qt 4.5.1)
 **
 ** WARNING! All changes made in this file will be lost!
