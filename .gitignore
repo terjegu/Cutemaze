@@ -8,6 +8,6 @@
 *.wav
 *.svn*
 *.png
-build/*
+build/cutemaze.build/*/*
 *.xcodeproj*
 *.app*
