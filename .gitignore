@@ -8,3 +8,6 @@
 *.wav
 *.svn*
 *.png
+build/*
+*.xcodeproj*
+*.app*
