@@ -25,6 +25,7 @@
 
 #include <QApplication>
 #include <QKeyEvent>
+#include <QMouseEvent> // ADDED BY TERJE GUNDERSEN
 #include <QLabel>
 #include <QMainWindow>
 #include <QMessageBox>
@@ -89,6 +90,8 @@ Board::Board(QMainWindow* parent)
 		m_done = true;
 		newGame();
 	}
+	
+	bool first_mouse_click = false; // ADDED BY TERJE GUNDERSEN
 
 	loadSettings();
 }
@@ -387,6 +390,105 @@ void Board::keyReleaseEvent(QKeyEvent* event)
 		m_move_timer->start();
 	}
 }
+// </s>
+// ============================================================================
+
+// ============================================================================
+
+// <s> ADDED BY TERJE GUNDERSEN
+
+void Board::mousePressEvent()
+{
+	/* 
+		QMessageBox mouseClickBox;
+		mouseClickBox.setText("Mouse is clicked");
+		mouseClickBox.exec();
+	*/
+	first_mouse_click = first_mouse_click == false ? true : false;
+
+	// Click the mouse to start recording
+	if (first_mouse_click == true) 
+	{	
+		// Prevent player from changing a paused or finished maze
+		if (m_done || m_paused) {
+			return;
+		}
+		
+		// Prevent movement during animation
+		if (m_smooth_movement && m_move_animation->state() == QTimeLine::Running) {
+			return;
+		}
+		
+		// Prevent changing direction while moving
+		if(m_player_direction != 0) {
+			return;
+		}
+	
+		if(!recorder.isRunning())
+		{
+			m_move_timer->stop();
+			recorder.start();
+			QTime now = QTime::currentTime();
+			m_start_record_time = 60*1000*now.minute() + 1000*now.second() + now.msec();
+			qDebug("on");
+		}
+	}
+	// Click the mouse again to stop recording
+	else if(recorder.isRunning())
+	{
+		// we need to record for at least 1.2 seconds
+		int nowTime;
+		do
+		{
+			usleep(10000);
+			QTime now = QTime::currentTime();
+			nowTime = 60*1000*now.minute() + 1000*now.second() + now.msec();
+		}
+		while((nowTime-m_start_record_time)<1250);
+		
+		recorder.stop();
+		qDebug("off");
+		std::vector<std::string> res;
+		res = recognize();
+		for(unsigned int i = 0 ; i < res.size() ; i++)
+		{
+			if(QString(res[i].c_str())==QString("SIL"))
+			{
+				qDebug("sil");
+			}
+			else if(QString(res[i].c_str())==QString("LEFT"))
+			{
+				qDebug("left");
+				m_player_direction = 3;
+			}
+			else if(QString(res[i].c_str())==QString("RIGHT"))
+			{
+				qDebug("right");
+				m_player_direction = 1;
+			}
+			else if(QString(res[i].c_str())==QString("UP"))
+			{
+				qDebug("up");
+				m_player_direction = 2;
+			}
+			else if(QString(res[i].c_str())==QString("DOWN"))
+			{
+				qDebug("down");
+				m_player_direction = 4;
+			}
+			else // This should not happen
+			{
+				qDebug(res[i].c_str());
+			}
+		}
+		m_move_timer->start();
+	}
+	else 
+	{
+		return;
+	}
+}
+
 // </s>
 // ============================================================================
 

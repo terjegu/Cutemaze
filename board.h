@@ -51,6 +51,7 @@ public slots:
 
 protected:
 	virtual void keyPressEvent(QKeyEvent* event);
+	virtual void mousePressEvent(); // ADDED BY TERJE GUNDERSEN
 	virtual void keyReleaseEvent(QKeyEvent* event); // ADDED BY LARS PETTER MOSTAD
 	virtual void paintEvent(QPaintEvent*);
 	virtual void resizeEvent(QResizeEvent*);
@@ -70,7 +71,8 @@ private:
 
 	bool m_done;
 	bool m_paused;
-
+	bool first_mouse_click; // ADDED BY TERJE GUNDERSEN
+	
 	int m_total_targets;
 	Maze* m_maze;
 	QPoint m_start;
