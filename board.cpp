@@ -90,8 +90,6 @@ Board::Board(QMainWindow* parent)
 		m_done = true;
 		newGame();
 	}
-	
-	bool first_mouse_click = false; // ADDED BY TERJE GUNDERSEN
 
 	loadSettings();
 }
@@ -288,10 +286,13 @@ void Board::keyPressEvent(QKeyEvent* event)
 		return;
 	}
 	
+	// COMMENTED OUT BY TERJE GUNDERSEN
+	/*
 	// Prevent changing direction while moving
 	if(m_player_direction != 0) {
 		return;
 	}
+	*/
 	
 	m_player_firststep = true;
 	
@@ -397,44 +398,49 @@ void Board::keyReleaseEvent(QKeyEvent* event)
 
 // <s> ADDED BY TERJE GUNDERSEN
 
-void Board::mousePressEvent()
+void Board::mousePressEvent(QMouseEvent* event)
 {
-	/* 
-		QMessageBox mouseClickBox;
-		mouseClickBox.setText("Mouse is clicked");
-		mouseClickBox.exec();
+	 // TEST MOUSE EVENT
+	/*
+	QMessageBox mouseClickBox;
+	mouseClickBox.setText("Mouse is clicked");
+	mouseClickBox.exec();
 	*/
-	first_mouse_click = first_mouse_click == false ? true : false;
+	//first_mouse_click = (first_mouse_click == false) ? true : false;
 
-	// Click the mouse to start recording
-	if (first_mouse_click == true) 
-	{	
-		// Prevent player from changing a paused or finished maze
-		if (m_done || m_paused) {
-			return;
-		}
-		
-		// Prevent movement during animation
-		if (m_smooth_movement && m_move_animation->state() == QTimeLine::Running) {
-			return;
-		}
-		
-		// Prevent changing direction while moving
-		if(m_player_direction != 0) {
-			return;
-		}
-	
-		if(!recorder.isRunning())
-		{
-			m_move_timer->stop();
-			recorder.start();
-			QTime now = QTime::currentTime();
-			m_start_record_time = 60*1000*now.minute() + 1000*now.second() + now.msec();
-			qDebug("on");
-		}
+	// Prevent player from changing a paused or finished maze
+	if (m_done || m_paused) {
+		return;
 	}
-	// Click the mouse again to stop recording
-	else if(recorder.isRunning())
+	
+	// Prevent movement during animation
+	if (m_smooth_movement && m_move_animation->state() == QTimeLine::Running) {
+		return;
+	}
+	
+	// Prevent changing direction while moving
+	if(m_player_direction != 0) {
+		return;
+	}
+	
+	// Click the mouse to start recording
+	if (!recorder.isRunning()) 
+	{	
+		m_move_timer->stop();
+		recorder.start();
+		QTime now = QTime::currentTime();
+		m_start_record_time = 60*1000*now.minute() + 1000*now.second() + now.msec();
+		qDebug("on");		
+	}
+	else 
+	{
+		return;
+	}
+}
+
+void Board::mouseReleaseEvent(QMouseEvent* event)
+{
+	if(recorder.isRunning())
 	{
 		// we need to record for at least 1.2 seconds
 		int nowTime;
@@ -483,12 +489,7 @@ void Board::mousePressEvent()
 		}
 		m_move_timer->start();
 	}
-	else 
-	{
-		return;
-	}
 }
-
 // </s>
 // ============================================================================
 
@@ -515,9 +516,9 @@ void Board::resizeEvent(QResizeEvent*)
 		//size -= (size % 14); the original code is this  
 		size -= (size % 26);
 	//</s>
-	float scale = static_cast<float>(size) / 448.0f;
+	//float scale = static_cast<float>(size) / 448.0f;
 	//<s> added by mehdi
-		scale = static_cast<float>(size) / 896.0f;
+	float	scale = static_cast<float>(size) / 896.0f;
 	//</s>
 
 	m_unit = scale * 32;
@@ -983,8 +984,8 @@ void Board::renderMaze(int frame)
 
 void Board::renderMaze(int frame)
 {
-	int column = m_player.x() - m_col_delta - 3;
-	int row = m_player.y() - m_row_delta - 3;
+	int column = m_player.x() - m_col_delta - 5;
+	int row = m_player.y() - m_row_delta - 5;
 	int columns = m_maze->columns();
 	int rows = m_maze->rows();
 
@@ -1011,35 +1012,35 @@ void Board::renderMaze(int frame)
 	painter.translate(delta * m_col_delta, delta * m_row_delta);
 
 	// Draw background
-	for (int r = 0; r < 11; ++r) {
-		for (int c = 0; c < 11; ++c) {
+	for (int r = 0; r < 12; ++r) {
+		for (int c = 0; c < 12; ++c) {
 			m_theme->draw(painter, c, r, Theme::Background);
 		}
 	}
 
 	// Initialize corners
-	unsigned char corners[11][11];
-	for (int r = 0; r < 11; ++r) {
-		for (int c = 0; c < 11; ++c) {
+	unsigned char corners[12][12];
+	for (int r = 0; r < 12; ++r) {
+		for (int c = 0; c < 12; ++c) {
 			corners[c][r] = 0;
 		}
 	}
 
 	// Setup columns
 	int column_start = 0;
-	int column_count = 10;
+	int column_count = 11;
 	if (column < 1) {
 		column_start = abs(column);
-	} else if (column + 9 >= columns) {
+	} else if (column + 10 >= columns) {
 		column_count = columns - column;
 	}
 
 	// Setup rows
 	int row_start = 0;
-	int row_count = 10;
+	int row_count = 11;
 	if (row < 1) {
 		row_start = abs(row);
-	} else if (row + 9 >= rows) {
+	} else if (row + 10 >= rows) {
 		row_count = rows - row;
 	}
 
@@ -1094,8 +1095,8 @@ void Board::renderMaze(int frame)
 	}
 
 	// Draw corners
-	for (int r = 0; r < 11; ++r) {
-		for (int c = 0; c < 11; ++c) {
+	for (int r = 0; r < 12; ++r) {
+		for (int c = 0; c < 12; ++c) {
 			unsigned char walls = corners[c][r];
 			if (walls) {
 				m_theme->drawCorner(painter, c, r, walls);
@@ -1104,7 +1105,7 @@ void Board::renderMaze(int frame)
 	}
 
 	// Draw start
-	QRect view(column, row, 10, 10);
+	QRect view(column, row, 11, 11);
 	if (view.contains(m_start)) {
 		m_theme->draw(painter, m_start.x() - column, m_start.y() - row, Theme::Start);
 	}
@@ -1119,7 +1120,7 @@ void Board::renderMaze(int frame)
 	painter.restore();
 
 	// Draw player
-	m_theme->draw(painter, 3, 3, Theme::Player, m_player_angle);
+	m_theme->draw(painter, 5, 5, Theme::Player, m_player_angle);
 }
 
 // ============================================================================
@@ -1176,9 +1177,9 @@ void Board::renderPause()
 {
 	// Create painter
 	QPainter painter(this);
-	int size = m_unit * 14;
+	//int size = m_unit * 14;
 	//<s> added by mehdi 
-	size = m_unit * 26;
+	int size = m_unit * 26;
 	//</s>
 	
 	painter.translate((width() - size) >> 1, (height() - size) >> 1);
@@ -1194,9 +1195,9 @@ void Board::renderText(QPainter* painter, const QString& message) const
 {
 	painter->setFont(QFont("Sans", 24));
 	QRect rect = painter->fontMetrics().boundingRect(message);
-	int size = (m_unit * 14) >> 1;
+	//int size = (m_unit * 14) >> 1;
 	//<s> added by mehdi 
-	size = (m_unit * 26) >> 1;
+	int size = (m_unit * 26) >> 1;
 	//</s>
 	int x1 = size - ((rect.width() + rect.height()) >> 1);
 	int y1 = size - rect.height();

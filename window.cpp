@@ -298,7 +298,7 @@ Window::Window()
 //<s>added by mehdi soufifar
 	//original text
 	//resize(QSettings().value("Size", QSize(448, 448)).toSize());
-	//resize(QSettings().value("Size", QSize(896, 896)).toSize());
+//	resize(QSettings().value("Size", QSize(896, 896)).toSize());
 	showFullScreen(); // added by Terje Gundersen
 //</s>
 	// Create auto-save timer

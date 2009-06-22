@@ -139,7 +139,7 @@ public:
 protected:
 	virtual void hideEvent(QHideEvent* event);
 	virtual void keyPressEvent(QKeyEvent* event);
-	//virtual void mousePressEvent(QMouseEvent* event); //TERJE GUNDERSEN
+	virtual void mousePressEvent(QMouseEvent* event); //TERJE GUNDERSEN
 };
 
 QList<ControlButton*> controls;
@@ -232,7 +232,7 @@ void ControlButton::keyPressEvent(QKeyEvent* event)
 // ============================================================================
 
 	// TERJE GUNDERSEN
-	/*
+	
 void ControlButton::mousePressEvent(QMouseEvent* event)
 {
 	if (this != active_control) {
@@ -245,7 +245,7 @@ void ControlButton::mousePressEvent(QMouseEvent* event)
 	}
 	QPushButton::mousePressEvent(event);
 }
-*/
+
 // ============================================================================
 }
 
